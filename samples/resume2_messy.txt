@@ -1,0 +1,10 @@
+rohan verma // rohan.v@mail.example  // 9876501234
+based in bangalore
+
+worked at InfraCloud as backend dev from march 2023 till now (about 2.5 yrs) - python, go, k8s
+before that: junior dev @ Zoho (2021-2023)
+
+edu: BE ECE from RVCE 2017-2021, 8.1 cgpa
+
+skills -> python / golang / kubernetes / terraform / aws
+certs: AWS Solutions Architect Associate (2024)

@@ -1,0 +1,24 @@
+ANANYA SHARMA
+ananya.sharma@example.com | +91 98765 43210 | Pune, India
+linkedin.com/in/ananya-sharma | github.com/ananya-codes
+
+SUMMARY
+Final-year CS student passionate about backend engineering and applied ML.
+
+EDUCATION
+B.Tech in Computer Science, Savitribai Phule Pune University, 2022 - 2026, CGPA 8.7/10
+HSC (Science), Fergusson College, 2020 - 2022, 91%
+
+EXPERIENCE
+Software Engineering Intern, TechNova Pvt Ltd (Jun 2025 - Aug 2025)
+- Built REST APIs in Flask serving 10k+ daily requests
+- Reduced query latency by 35% via indexing and caching
+
+Open Source Contributor, Apache Airflow (Jan 2025 - Present)
+- Fixed 6 documentation and scheduler bugs
+
+SKILLS
+Python, Flask, SQL, PostgreSQL, Docker, Git, Pandas
+
+PROJECTS
+Campus Marketplace - full-stack buy/sell platform (React, Node.js, MongoDB)

@@ -1,0 +1,23 @@
+{
+  "full_name": "Priya Nair",
+  "email": "priya.nair@example.com",
+  "phone": null,
+  "location": null,
+  "summary": null,
+  "education": [
+    {
+      "degree": "MBA",
+      "institution": "IIM Indore",
+      "start_year": 2020,
+      "end_year": 2022,
+      "grade": null
+    }
+  ],
+  "experience": [],
+  "skills": [
+    "Excel",
+    "Tableau",
+    "SQL"
+  ],
+  "certifications": []
+}

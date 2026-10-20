@@ -1,0 +1,56 @@
+{
+  "full_name": "Ananya Sharma",
+  "email": "ananya.sharma@example.com",
+  "phone": "+91 98765 43210",
+  "location": "Pune, India",
+  "summary": "Final-year CS student passionate about backend engineering and applied ML.",
+  "education": [
+    {
+      "degree": "B.Tech in Computer Science",
+      "institution": "Savitribai Phule Pune University",
+      "start_year": 2022,
+      "end_year": 2026,
+      "grade": "CGPA 8.7/10"
+    },
+    {
+      "degree": "HSC (Science)",
+      "institution": "Fergusson College",
+      "start_year": 2020,
+      "end_year": 2022,
+      "grade": "91%"
+    }
+  ],
+  "experience": [
+    {
+      "title": "Software Engineering Intern",
+      "company": "TechNova Pvt Ltd",
+      "start_date": "2025-06",
+      "end_date": "2025-08",
+      "is_current": false,
+      "highlights": [
+        "Built REST APIs in Flask serving 10k+ daily requests",
+        "Reduced query latency by 35% via indexing and caching"
+      ]
+    },
+    {
+      "title": "Open Source Contributor",
+      "company": "Apache Airflow",
+      "start_date": "2025-01",
+      "end_date": null,
+      "is_current": true,
+      "highlights": [
+        "Fixed 6 documentation and scheduler bugs"
+      ]
+    }
+  ],
+  "skills": [
+    "Python",
+    "Flask",
+    "SQL",
+    "PostgreSQL",
+    "Docker",
+    "Git",
+    "Pandas"
+  ],
+  "certifications": []
+}

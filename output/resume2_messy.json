@@ -1,0 +1,46 @@
+{
+  "full_name": "Rohan Verma",
+  "email": "rohan.v@mail.example",
+  "phone": "9876501234",
+  "location": "Bangalore",
+  "summary": null,
+  "education": [
+    {
+      "degree": "BE ECE",
+      "institution": "RVCE",
+      "start_year": 2017,
+      "end_year": 2021,
+      "grade": "8.1 cgpa"
+    }
+  ],
+  "experience": [
+    {
+      "title": "Backend Developer",
+      "company": "InfraCloud",
+      "start_date": "2023-03",
+      "end_date": null,
+      "is_current": true,
+      "highlights": [
+        "Python, Go, K8s"
+      ]
+    },
+    {
+      "title": "Junior Developer",
+      "company": "Zoho",
+      "start_date": "2021",
+      "end_date": "2023",
+      "is_current": false,
+      "highlights": []
+    }
+  ],
+  "skills": [
+    "Python",
+    "Golang",
+    "Kubernetes",
+    "Terraform",
+    "AWS"
+  ],
+  "certifications": [
+    "AWS Solutions Architect Associate (2024)"
+  ]
+}
