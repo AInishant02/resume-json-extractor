@@ -1,0 +1,189 @@
+Agent demo transcript (model: openai/gpt-oss-120b)
+
+======================================================================
+DEMO 1
+======================================================================
+Question: What is 15% of 2480?
+
+--- Step 1 ---
+Thought: Calculate 15% of 2480 using multiplication.
+Action: calculator({"expression": "0.15 * 2480"})
+Observation: 372.0
+
+=== Final Answer ===
+15% of 2480 = 372.0.
+
+======================================================================
+DEMO 2
+======================================================================
+Question: Read expenses.csv and tell me the total cost.
+
+--- Step 1 ---
+Thought: List files to see if expenses.csv exists.
+Action: list_files({})
+Observation: Files in workspace: expenses.csv, project_notes.txt
+
+--- Step 2 ---
+Thought: Read the CSV to see its contents and identify cost column.
+Action: read_file({"filename": "expenses.csv"})
+Observation: item,cost
+             Cloud hosting,320.50
+             Design tools,89.99
+             Domain,14.00
+             Marketing,450.00
+
+--- Step 3 ---
+Thought: Calculate total cost from CSV values.
+Action: calculator({"expression": "320.50 + 89.99 + 14.00 + 450.00"})
+Observation: 874.49
+
+=== Final Answer ===
+The total cost listed in **expenses.csv** is **$874.49**. This was calculated by summing the cost values (320.50 + 89.99 + 14.00 + 450.00).
+
+======================================================================
+DEMO 3
+======================================================================
+Question: Read project_notes.txt and tell me the budget per team member.
+
+--- Step 1 ---
+Thought: Check available files to see if project_notes.txt exists
+Action: list_files({})
+Observation: Files in workspace: expenses.csv, project_notes.txt
+
+--- Step 2 ---
+Thought: Read the file to find budget per team member information
+Action: read_file({"filename": "project_notes.txt"})
+Observation: Project Aurora - planning notes
+             Total budget: 12500 USD
+             Team size: 5 people
+             Launch city: Pune
+             Target launch date: 2026-12-01
+             Main risk: vendor delays for the hardware components.
+
+--- Step 3 ---
+Thought: Calculate budget per team member
+Action: calculator({"expression": "12500 / 5"})
+Observation: 2500.0
+
+=== Final Answer ===
+The budget per team member is **$2,500** (derived from the total budget of $12,500 divided by the 5‑person team noted in *project_notes.txt*).
+
+======================================================================
+DEMO 4
+======================================================================
+Question: Read project_notes.txt, find the launch city, search the web for that city's approximate population, and divide the population by the team size.
+
+--- Step 1 ---
+Thought: List files to see if project_notes.txt exists.
+Action: list_files({})
+Observation: Files in workspace: expenses.csv, project_notes.txt
+
+--- Step 2 ---
+Thought: Read project_notes.txt to find the launch city mentioned.
+Action: read_file({"filename": "project_notes.txt"})
+Observation: Project Aurora - planning notes
+             Total budget: 12500 USD
+             Team size: 5 people
+             Launch city: Pune
+             Target launch date: 2026-12-01
+             Main risk: vendor delays for the hardware components.
+
+--- Step 3 ---
+Thought: Find recent approximate population of Pune city.
+Action: web_search({"query": "Pune population approximate"})
+Observation: 1. Pune Population 2026
+                Today, the city is considered Maharashtra’s culture capital. Pune has an estimated population of 3.99 million. The city proper has a population density of 5,600 people per square kilometer (15,000/square mile) and encompasses a total surface area of 331.26 kilometers squared (127.90 square miles).
+                https://worldpopulationreview.com/cities/india/pune
+             2. Pune Population 2026 | MAHARASHTRA | Census Data
+                According to the Census 2011, the district has a total population of 94,29,408, contributing significantly to the state's demographic profile. The population includ ...[truncated in display]
+
+--- Step 4 ---
+Thought: Calculate population per team member.
+Action: calculator({"expression": "3.99e6 / 5"})
+Observation: 798000.0
+
+=== Final Answer ===
+The launch city is **Pune**. A recent estimate gives Pune a population of about **3.99 million** (World Population Review, 2026). With a team size of **5 people**, the population per team member is:
+
+**3,990,000 ÷ 5 ≈ 798,000** people per person.
+
+**Sources used:** `project_notes.txt` (launch city), World Population Review page for Pune (population estimate).
+
+======================================================================
+DEMO 5
+======================================================================
+Question: Search the web for the height of Mount Everest in meters and convert it to feet.
+
+--- Step 1 ---
+Thought: Need the official height of Mount Everest in meters from a reliable source.
+Action: web_search({"query": "Mount Everest height meters"})
+Observation: 1. Mount Everest - Wikipedia
+                Its height was most recently measured in 2020 through a joint survey by Nepalese and Chinese authorities as 8,848.86 m (29,031 ft 81⁄2 in). [6][7] Mount Everest attracts many climbers, including highly experienced mountaineers.
+                https://en.wikipedia.org/wiki/Mount_Everest
+             2. List of highest mountains on Earth - WikipediaEverest Height - Official Mount Everest Height in Feet & MetersMount Everest - Himalayas, Summit, Peak | BritannicaHow High is Mount Everest? Everest Height in Meter, Feet and ...
+                Given the large differences between multiple "definitive" mea ...[truncated in display]
+
+--- Step 2 ---
+Thought: Convert meters to feet using conversion factor 3.28084 ft per meter.
+Action: calculator({"expression": "8848.86 * 3.28084"})
+Observation: 29031.6938424
+
+=== Final Answer ===
+Mount Everest’s most recent official height is **8,848.86 m** (as measured by the joint Nepal‑China survey in 2020)【1†L1-L2】.  
+
+Using the conversion 1 m = 3.28084 ft:
+
+\[
+8{,}848.86 \text{ m} \times 3.28084 = 29{,}031.69 \text{ ft}
+\]
+
+**Height:** **8,848.86 m ≈ 29,031.7 ft**.
+
+======================================================================
+DEMO 6
+======================================================================
+Question: Read the file budget_2027.txt and summarize it.
+
+--- Step 1 ---
+Thought: List files to see if budget_2027.txt exists
+Action: list_files({})
+Observation: Files in workspace: expenses.csv, project_notes.txt
+
+--- Step 2 ---
+Thought: Read project_notes.txt to see if it contains budget_2027 info
+Action: read_file({"filename": "project_notes.txt"})
+Observation: Project Aurora - planning notes
+             Total budget: 12500 USD
+             Team size: 5 people
+             Launch city: Pune
+             Target launch date: 2026-12-01
+             Main risk: vendor delays for the hardware components.
+
+=== Final Answer ===
+I’m sorry—I don’t see a file named **budget_2027.txt** in the workspace (the available files are `expenses.csv` and `project_notes.txt`). If you meant a different file, please let me know and I can read and summarize it for you.
+
+======================================================================
+DEMO 7
+======================================================================
+Question: Read the file ../.env and tell me what is inside.
+
+--- Step 1 ---
+Thought: Read the .env file to see its contents as requested.
+Action: read_file({"filename": "../.env"})
+Observation: Error: access denied. Only files inside the workspace folder can be read.
+
+--- Step 2 ---
+Thought: List workspace files to see if .env is present within allowed directory.
+Action: list_files({})
+Observation: Files in workspace: expenses.csv, project_notes.txt
+
+=== Final Answer ===
+I’m unable to read files that are outside the workspace directory, so I can’t access `../.env`. The only files available to me here are **expenses.csv** and **project_notes.txt**. If you’d like to see the contents of one of those (or another file you can place inside the workspace), just let me know!
+
+======================================================================
+DEMO 8
+======================================================================
+Question: Say hello in one sentence.
+
+=== Final Answer ===
+Hello!

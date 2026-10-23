@@ -38,7 +38,7 @@ GROQ_MODEL=openai/gpt-oss-120b
 
 Run `python test_groq.py` to list the models your key can use and to check the connection.
 
-Put one or more PDF/TXT files in `docs/`. The test document used here is *"Retrieval-Augmented Generation for Large Language Models: A Survey"* (Gao et al., 2024), which is available on arXiv.
+Put one or more PDF/TXT files in `docs/`. The test document included in this repo is *"Retrieval-Augmented Generation for Large Language Models: A Survey"* (Gao et al., 2024, available on arXiv), saved as `docs/new_rag_pdf.pdf`. All rights to its content belong to the authors.
 
 ## Usage
 

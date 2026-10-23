@@ -1,0 +1,6 @@
+Project Aurora - planning notes
+Total budget: 12500 USD
+Team size: 5 people
+Launch city: Pune
+Target launch date: 2026-12-01
+Main risk: vendor delays for the hardware components.
